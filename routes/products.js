@@ -5,7 +5,7 @@ var Product=require("../models/product");
 router.get('/',async function(req, res, next) {
   let products=await Product.find();
  // console.log(products);
-  res.render("products/list",{products});
+  res.render("products/list",{title:"PRODUCTS",products});
 
 });
 router.get("/add", async function (req, res, next) {

@@ -41,7 +41,7 @@ app.use(function (err, req, res, next) {
 });
 
 mongoose
-  .connect("mongodb+srv://aimen123exam:exam123@cluster0.xrzgr.mongodb.net/test", {
+  .connect("mongodb+srv://aimenn:aimen18@cluster.zoxnz.mongodb.net/test", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

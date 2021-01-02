@@ -17,20 +17,6 @@ h1{
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content:center;
-  align-items: center;
   color:lightgray;
-}
 
-.stars{
-  list-style: none;
-  font-size: 4rem;
-  padding-left: 20px;
-
-}
-
-
-
-.clicked-stars{
-  color: yellow;
 }

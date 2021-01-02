@@ -1,24 +1,19 @@
 extends ../layout
 
 block content
-    h1  Products
-            <br/>
     .row
         .col-sm-8
             h1=title
         .col-sm-4
             a(href="/products/add", class="btn btn-success float-right") Add New Product
-            <br/>
-            <br/>
-            <br/>
     table.table
         thead
             tr
-                th ProductsName
-                th ProductsCategory
-                th ProductsDetails
-                th  ProductsPrice
-                th actions
+                th Product ID
+                th Product Name
+                th Poduct Category
+                th Product Price
+                th Action
 
         tbody
             each product in products
@@ -29,5 +24,6 @@ block content
                     td=product.service
                     td
                         a(href="/products/delete/"+product._id, class="btn btn-danger") Delete
+
 
 
