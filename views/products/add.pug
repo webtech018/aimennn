@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    h1 Add Products
+    form(action="/products/add",method="post")
+        .form-group
+            label(for="name") ProductsName
+            input#name(type="text", class="form-control", name="name")
+        .form-group
+            label(for="contact") ProductsCategory
+            input#contact(type="text", class="form-control", name="contact")
+        .form-group
+            label(for="city") ProductsDetails
+            input#city(type="text", class="form-control", name="city")
+        .form-group
+            label(for="service") ProductsPrice
+            input#service(type="text", class="form-control", name="service")
+        input(type="submit", class="btn btn-info")
+        
